@@ -79,7 +79,7 @@ body {
 .introduction {
   font-size: 26px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 32px;
 }
 .name {
   color: #90A6EF;
@@ -87,37 +87,70 @@ body {
   font-weight: bold;
   line-height: 96px;
 }
-#fish {
+#board {
   display: block;
   width: 1000px;
   height: 810px;
   margin: 0 auto;
   padding: 100px 0 100px;
 }
-.fish-part-word {
+#fish-color-face .deep,
+#fish-color-chest .deep,
+#fish-color-belly .deep,
+#fish-color-tail .deep {
+  stop-opacity: 1;
+}
+#fish-color-face .tint,
+#fish-color-chest .tint,
+#fish-color-belly .tint,
+#fish-color-tail .tint {
+  stop-opacity: 1;
+}
+#fish-color-face .deep {
+  stop-color: #FF795A;
+}
+#fish-color-face .tint {
+  stop-color: #FFCB8D;
+}
+#fish-color-chest .deep {
+  stop-color: #B878F4;
+}
+#fish-color-chest .tint {
+  stop-color: #F490DE;
+}
+#fish-color-belly .deep {
+  stop-color: #7076EB;
+}
+#fish-color-belly .tint {
+  stop-color: #8FB1FF;
+}
+#fish-color-tail .deep {
+  stop-color: #019CFF;
+}
+#fish-color-tail .tint {
+  stop-color: #4BD3FF;
+}
+#fish-title text {
   fill: white;
   font-size: 32px;
   line-height: 39px;
   font-weight: bold;
 }
-.subhead-head,
-.subhead-chest,
-.subhead-belly,
-.subhead-tail {
+#fish-subhead text {
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
 }
-.subhead-head {
+#fish-subhead .face {
   fill: #E06843;
 }
-.subhead-chest {
+#fish-subhead .chest {
   fill: #905AB3;
 }
-.subhead-belly {
+#fish-subhead .belly {
   fill: #5059A1;
 }
-.subhead-tail {
+#fish-subhead .tail {
   fill: #1782C0;
 }
 .information {
@@ -160,7 +193,7 @@ body {
 }
 .link {
   float: left;
-  margin-right: 18px;
+  margin: 0 9px;
 }
 .link img {
   width: 24px;

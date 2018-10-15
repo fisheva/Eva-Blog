@@ -19,38 +19,41 @@
             <div class="name">fisheva</div>
             <div class="introduction">a web developer</div>
         </header>
-        <svg id="fish" version="1.1">
-            <polygon id="fish-head" points="771,0 958,0 865,162" fill="url(#fish-head-color)"/>
-            <polygon id="fish-chest" points="397,0 584,0 771,324 678,486" fill="url(#fish-chest-color)" />
-            <polygon id="fish-belly" points="23,0 210,0 584,648 491,810" fill="url(#fish-belly-color)" />
-            <polygon id="fish-tail" points="0,445 186,445 93,607" fill="url(#fish-tail-color)" />
-
-            <text x="826" y="70" class="fish-part-word">Chat</text>
-            <text x="571" y="223" class="fish-part-word">Blog</text>
-            <text x="275" y="385" class="fish-part-word">Works</text>
-            <text x="61" y="518" class="fish-part-word">Like</text>
-
-            <text x="827" y="40" class="subhead-head">Visit</text>
-            <text x="572" y="193" class="subhead-chest">Daily</text>
-            <text x="275" y="355" class="subhead-belly">Some</text>
-            <text x="62" y="488" class="subhead-tail">Things</text>
-            
+        <svg id="board" version="1.1">
+            <g id="fish">
+                <polygon class="face" points="780,0 967,0 874,162" fill="url(#fish-color-face)"/>
+                <polygon class="chest" points="406,0 593,0 780,324 687,486" fill="url('#fish-color-chest')" />
+                <polygon class="belly" points="32,0 219,0 593,648 500,810" fill="url(#fish-color-belly)" />
+                <polygon class="tail" points="9,445 195,445 102,607" fill="url(#fish-color-tail)" />
+            </g>
+            <g id="fish-title">
+                <text x="835" y="70" class="face">Chat</text>
+                <text x="580" y="223" class="chest">Blog</text>
+                <text x="284" y="385" class="belly">Works</text>
+                <text x="70" y="518" class="tail">Like</text> 
+            </g>
+            <g id="fish-subhead">
+                <text x="836" y="40" class="face">Visit</text>
+                <text x="581" y="193" class="chest">Daily</text>
+                <text x="284" y="355" class="belly">Some</text>
+                <text x="71" y="488" class="tail">Things</text>
+            </g>
             <defs>
-                <linearGradient id="fish-head-color" x1="0%" y1="50%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:#FF795A;stop-opacity:1"/>
-                    <stop offset="100%" style="stop-color:#FFCB8D;stop-opacity:1"/>
+                <linearGradient id="fish-color-face" x1="0%" y1="50%" x2="100%" y2="0%">
+                        <stop offset="0%" class="deep"/>
+                        <stop offset="100%" class="tint"/>
+                    </linearGradient>
+                <linearGradient id="fish-color-chest" x1="100%" y1="100%" x2="50%" y2="0%">
+                    <stop offset="0%" class="deep"/>
+                    <stop offset="100%" class="tint"/>
                 </linearGradient>
-                <linearGradient id="fish-chest-color" x1="100%" y1="100%" x2="50%" y2="0%">
-                    <stop offset="0%" style="stop-color:#B878F4;stop-opacity:1"/>
-                    <stop offset="100%" style="stop-color:#F490DE;stop-opacity:1"/>
+                <linearGradient id="fish-color-belly" x1="100%" y1="100%" x2="50%" y2="0%">
+                    <stop offset="0%" class="deep"/>
+                    <stop offset="100%" class="tint"/>
                 </linearGradient>
-                <linearGradient id="fish-belly-color" x1="100%" y1="100%" x2="50%" y2="0%">
-                    <stop offset="0%" style="stop-color:#7076EB;stop-opacity:1"/>
-                    <stop offset="100%" style="stop-color:#8FB1FF;stop-opacity:1"/>
-                </linearGradient>
-                <linearGradient id="fish-tail-color" x1="0%" y1="50%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:#019CFF;stop-opacity:1"/>
-                    <stop offset="100%" style="stop-color:#4BD3FF;stop-opacity:1"/>
+                <linearGradient id="fish-color-tail" x1="0%" y1="50%" x2="100%" y2="0%">
+                    <stop offset="0%" class="deep"/>
+                    <stop offset="100%" class="tint"/>
                 </linearGradient>
             </defs>
         </svg>
