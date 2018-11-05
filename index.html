@@ -16,42 +16,47 @@
     <div class="homepage">
         <header class="greet">
             <div class="hello">Hello I'm</div>
-            <div class="name">fisheva</div>
-            <div class="introduction">a web developer</div>
+            <div class="name-up">
+                <div class="name">fisheva</div>
+            </div>
+            <div class="name-down">
+                <div class="name">fisheva</div>
+            </div>
+            <div class="intro">a web developer</div>
         </header>
-        <svg id="board" version="1.1">
+        <svg id="board" version="1.1" class="hide">
             <g id="fish">
-                <polygon class="face" points="780,0 967,0 874,162" fill="url(#fish-color-face)"/>
-                <polygon class="chest" points="406,0 593,0 780,324 687,486" fill="url('#fish-color-chest')" />
-                <polygon class="belly" points="32,0 219,0 593,648 500,810" fill="url(#fish-color-belly)" />
-                <polygon class="tail" points="9,445 195,445 102,607" fill="url(#fish-color-tail)" />
+                <polygon class="face" points="880,100 1067,100 974,262" fill="url(#fish-color-face)"/>
+                <polygon class="chest" points="506,100 693,100 880,424 787,586" fill="url('#fish-color-chest')" />
+                <polygon class="belly" points="132,100 319,100 693,748 600,910" fill="url(#fish-color-belly)" />
+                <polygon class="tail" points="109,545 295,545 202,707" fill="url(#fish-color-tail)" />
             </g>
             <g id="fish-title">
-                <text x="835" y="70" class="face">Chat</text>
-                <text x="580" y="223" class="chest">Blog</text>
-                <text x="284" y="385" class="belly">Works</text>
-                <text x="70" y="518" class="tail">Like</text> 
+                <text x="935" y="170" class="face">Chat</text>
+                <text x="680" y="323" class="chest">Blog</text>
+                <text x="384" y="485" class="belly">Works</text>
+                <text x="170" y="618" class="tail">Like</text> 
             </g>
             <g id="fish-subhead">
-                <text x="836" y="40" class="face">Visit</text>
-                <text x="581" y="193" class="chest">Daily</text>
-                <text x="284" y="355" class="belly">Some</text>
-                <text x="71" y="488" class="tail">Things</text>
+                <text x="936" y="140" class="face">Visit</text>
+                <text x="681" y="293" class="chest">Daily</text>
+                <text x="384" y="455" class="belly">Some</text>
+                <text x="171" y="588" class="tail">Things</text>
             </g>
-            <defs>
-                <linearGradient id="fish-color-face" x1="0%" y1="50%" x2="100%" y2="0%">
-                        <stop offset="0%" class="deep"/>
-                        <stop offset="100%" class="tint"/>
-                    </linearGradient>
-                <linearGradient id="fish-color-chest" x1="100%" y1="100%" x2="50%" y2="0%">
+            <defs id="fish-color">
+                <linearGradient id="fish-color-face" class="face" x1="0%" y1="50%" x2="100%" y2="0%">
                     <stop offset="0%" class="deep"/>
                     <stop offset="100%" class="tint"/>
                 </linearGradient>
-                <linearGradient id="fish-color-belly" x1="100%" y1="100%" x2="50%" y2="0%">
+                <linearGradient id="fish-color-chest" class="chest" x1="100%" y1="100%" x2="50%" y2="0%">
                     <stop offset="0%" class="deep"/>
                     <stop offset="100%" class="tint"/>
                 </linearGradient>
-                <linearGradient id="fish-color-tail" x1="0%" y1="50%" x2="100%" y2="0%">
+                <linearGradient id="fish-color-belly" class="belly" x1="100%" y1="100%" x2="50%" y2="0%">
+                    <stop offset="0%" class="deep"/>
+                    <stop offset="100%" class="tint"/>
+                </linearGradient>
+                <linearGradient id="fish-color-tail" class="tail" x1="0%" y1="50%" x2="100%" y2="0%">
                     <stop offset="0%" class="deep"/>
                     <stop offset="100%" class="tint"/>
                 </linearGradient>
@@ -67,17 +72,17 @@
                 <span class="describe">get in touch me at :</span>
                 <br/>
                 <nav class="links">
-                    <a href="javascript:;" class="link">
+                    <a href="https://github.com/fisheva" class="link" target="_blank">
                         <svg width="24" height="24">
                             <image xlink:href="img/links/GitHub.svg" class="fixPng" src="img/links/GitHub.png" width="24" height="24" />
                         </svg>
                     </a>
-                    <a href="javascript:;" class="link">
+                    <a href="https://www.zhihu.com/people/fisheva/activities" class="link" target="_blank">
                         <svg width="24" height="24">
                             <image xlink:href="img/links/ZhiHu.svg" class="fixPng" src="img/links/ZhiHu.png" width="24" height="24" />
                         </svg>
                     </a>
-                    <a href="javascript:;" class="link">
+                    <a href="https://www.zhipin.com/geek/new/index/resume" class="link" target="_blank">
                         <svg width="24" height="24">
                             <image xlink:href="img/links/Boss.svg" class="fixPng" src="img/links/Boss.png" width="24" height="24" />
                         </svg>
